@@ -1,64 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
+
 <body>
 
-<div class="text-center text-warning bg-dark border" style="margin-bottom:0">
-  <h1>Cloud Compare</h1>
-  <p>My comparison of cloud capabilities</p>
-</div>
+  <div class="text-center text-warning bg-dark border" style="margin-bottom:0">
+    <h1>Cloud Compare</h1>
+    <p>My comparison of cloud capabilities</p>
+  </div>
 
-<div class="accordion bg-primary" id="accordionExample">
-  <div class="accordion-item text-info bg-dark">
-    <h2 class="accordion-header" id="headingOne">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        Compute
-      </button>
-    </h2>
-    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <table class="table table-striped">
+  <div class="accordion bg-primary" id="accordionExample">
+    <div class="accordion-item text-info bg-dark">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+          aria-expanded="true" aria-controls="collapseOne">
+          Compute
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <table class="table table-striped" style="width: 100%;">
             <tr>
-                <td class="table-primary">Service</td>
-                <td class="table-secondary">AWS</td>
-                <td class="table-success">GCP</td>
-                <td class="table-danger">Azure</td>
-                <td class="table-warning">IBM</td>
-                <td class="table-info">Oracle</td>
-                <td class="table-light">VMWare</td>
-                <td class="table-dark">Multicloud</td>
+              <td class="table-primary" style="width: 10%;">Service</td>
+              <td class="table-secondary">AWS</td>
+              <td class="table-success">GCP</td>
+              <td class="table-danger">Azure</td>
+              <td class="table-warning">IBM</td>
+              <td class="table-info">Oracle</td>
+              <td class="table-light">VMWare</td>
+              <td class="table-dark">Multicloud</td>
             </tr>
             <tr>
               <td class="table-primary">Container Management Service</td>
               <td class="table-secondary">
-                <table>
-                  <tr>
-                    <td>
-                      <a href="https://aws.amazon.com/ecs/" target="_blank" style="text-decoration:none">Amazon Elastic Container Service (Amazon ECS)</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <a href="https://aws.amazon.com/eks/" target="_blank" style="text-decoration:none">Amazon Elastic Kubernetes Service (Amazon EKS)</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <a href="https://aws.amazon.com/rosa/" target="_blank" style="text-decoration:none">Red Hat OpenShift Service on AWS (ROSA)</a>
-                    </td>
-                  </tr>
-                </table>
+                <dl>
+                  <dt style="font-size: 16px;"><a href="https://aws.amazon.com/ecs/" target="_blank"
+                      style="text-decoration:none">Amazon Elastic
+                      Container Service (Amazon ECS)</a></dt>
+                  <dd style="font-size: 14px;">Amazon ECS is a fully managed container orchestration service that makes
+                    it easy for you to deploy, manage, and scale containerized applications.</dd>
+                  <dt style="font-size: 16px;"><a href="https://aws.amazon.com/eks/" target="_blank"
+                      style="text-decoration:none">Amazon Elastic Kubernetes Service (Amazon EKS)</a></dt>
+                  <dd style="font-size: 14px;">Amazon Elastic Kubernetes Service (Amazon EKS) is a managed container
+                    service to run and scale Kubernetes applications in the cloud or on-premises. </dd>
+                  <dt style="font-size: 16px;"><a href="https://aws.amazon.com/rosa/" target="_blank"
+                      style="text-decoration:none">Red Hat OpenShift Service on AWS (ROSA)</a></dt>
+                  <dd style="font-size: 14px;">ROSA delivers the production-ready OpenShift that many enterprises
+                    already use on-premises today, simplifying the ability to shift workloads to the AWS public cloud as business needs change.</dd>
+                </dl>
               </td>
               <td class="table-success">
-                <table>
-                  <tr>
-                    <td>
-                      <a href="https://cloud.google.com/kubernetes-engine" target="_blank" style="text-decoration:none">Google Kubernetes Engine (GKE)</a>
-                    </td>
-                  </tr>
-                </table>
+                <dl>
+                  <dt style="font-size: 16px;"><a href="https://cloud.google.com/kubernetes-engine" target="_blank"
+                      style="text-decoration:none">Google Kubernetes Engine (GKE)</a></dt>
+                  <dd style="font-size: 14px;">The most automated and scalable managed Kubernetes platform.</dd>
+                </dl>
               </td>
               <td class="table-danger">...</td>
               <td class="table-warning">...</td>
@@ -66,28 +67,30 @@
               <td class="table-light">...</td>
               <td class="table-dark">...</td>
             </tr>
-        </table>
+          </table>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="accordion-item text-info bg-dark">
-    <h2 class="accordion-header" id="headingTwo">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        Storage
-      </button>
-    </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <table class="table table-striped">
+    <div class="accordion-item text-info bg-dark">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+          aria-expanded="false" aria-controls="collapseTwo">
+          Storage
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <table class="table table-striped">
             <tr>
-                <td class="table-primary">Service</td>
-                <td class="table-secondary">AWS</td>
-                <td class="table-success">GCP</td>
-                <td class="table-danger">Azure</td>
-                <td class="table-warning">IBM</td>
-                <td class="table-info">Oracle</td>
-                <td class="table-light">VMWare</td>
-                <td class="table-dark">Multicloud</td>
+              <td class="table-primary">Service</td>
+              <td class="table-secondary">AWS</td>
+              <td class="table-success">GCP</td>
+              <td class="table-danger">Azure</td>
+              <td class="table-warning">IBM</td>
+              <td class="table-info">Oracle</td>
+              <td class="table-light">VMWare</td>
+              <td class="table-dark">Multicloud</td>
             </tr>
             <tr>
               <td class="table-primary">...</td>
@@ -99,28 +102,30 @@
               <td class="table-light">...</td>
               <td class="table-dark">...</td>
             </tr>
-        </table>
+          </table>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="accordion-item text-info bg-dark">
-    <h2 class="accordion-header" id="headingThree">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        Networking
-      </button>
-    </h2>
-    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <table class="table table-striped">
+    <div class="accordion-item text-info bg-dark">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Networking
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <table class="table table-striped">
             <tr>
-                <td class="table-primary">Service</td>
-                <td class="table-secondary">AWS</td>
-                <td class="table-success">GCP</td>
-                <td class="table-danger">Azure</td>
-                <td class="table-warning">IBM</td>
-                <td class="table-info">Oracle</td>
-                <td class="table-light">VMWare</td>
-                <td class="table-dark">Multicloud</td>
+              <td class="table-primary">Service</td>
+              <td class="table-secondary">AWS</td>
+              <td class="table-success">GCP</td>
+              <td class="table-danger">Azure</td>
+              <td class="table-warning">IBM</td>
+              <td class="table-info">Oracle</td>
+              <td class="table-light">VMWare</td>
+              <td class="table-dark">Multicloud</td>
             </tr>
             <tr>
               <td class="table-primary">...</td>
@@ -132,28 +137,30 @@
               <td class="table-light">...</td>
               <td class="table-dark">...</td>
             </tr>
-        </table>
+          </table>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="accordion-item text-info bg-dark">
-    <h2 class="accordion-header" id="headingFour">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-        Messaging
-      </button>
-    </h2>
-    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <table class="table table-striped">
+    <div class="accordion-item text-info bg-dark">
+      <h2 class="accordion-header" id="headingFour">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          Messaging
+        </button>
+      </h2>
+      <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <table class="table table-striped">
             <tr>
-                <td class="table-primary">Service</td>
-                <td class="table-secondary">AWS</td>
-                <td class="table-success">GCP</td>
-                <td class="table-danger">Azure</td>
-                <td class="table-warning">IBM</td>
-                <td class="table-info">Oracle</td>
-                <td class="table-light">VMWare</td>
-                <td class="table-dark">Multicloud</td>
+              <td class="table-primary">Service</td>
+              <td class="table-secondary">AWS</td>
+              <td class="table-success">GCP</td>
+              <td class="table-danger">Azure</td>
+              <td class="table-warning">IBM</td>
+              <td class="table-info">Oracle</td>
+              <td class="table-light">VMWare</td>
+              <td class="table-dark">Multicloud</td>
             </tr>
             <tr>
               <td class="table-primary">...</td>
@@ -165,28 +172,30 @@
               <td class="table-light">...</td>
               <td class="table-dark">...</td>
             </tr>
-        </table>
+          </table>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="accordion-item text-info bg-dark">
-    <h2 class="accordion-header" id="headingFive">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-        Database
-      </button>
-    </h2>
-    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <table class="table table-striped">
+    <div class="accordion-item text-info bg-dark">
+      <h2 class="accordion-header" id="headingFive">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          Database
+        </button>
+      </h2>
+      <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <table class="table table-striped">
             <tr>
-                <td class="table-primary">Service</td>
-                <td class="table-secondary">AWS</td>
-                <td class="table-success">GCP</td>
-                <td class="table-danger">Azure</td>
-                <td class="table-warning">IBM</td>
-                <td class="table-info">Oracle</td>
-                <td class="table-light">VMWare</td>
-                <td class="table-dark">Multicloud</td>
+              <td class="table-primary">Service</td>
+              <td class="table-secondary">AWS</td>
+              <td class="table-success">GCP</td>
+              <td class="table-danger">Azure</td>
+              <td class="table-warning">IBM</td>
+              <td class="table-info">Oracle</td>
+              <td class="table-light">VMWare</td>
+              <td class="table-dark">Multicloud</td>
             </tr>
             <tr>
               <td class="table-primary">...</td>
@@ -198,16 +207,19 @@
               <td class="table-light">...</td>
               <td class="table-dark">...</td>
             </tr>
-        </table>
+          </table>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<div class="text-center text-info bg-dark border" style="margin-bottom:0">
-  <p>Feel free to contribute</p>
-</div>
+  <div class="text-center text-info bg-dark border" style="margin-bottom:0">
+    <p>Feel free to contribute</p>
+  </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
